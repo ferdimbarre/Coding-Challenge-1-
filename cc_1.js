@@ -18,6 +18,7 @@ const productDetails = {
 
 } console.log(products, productDetails);
 
+
 // Task 3: Assignment Operators
 let accountBalance = 200;
 console.log(accountBalance); // = 200
