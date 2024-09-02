@@ -12,11 +12,12 @@ console.log(isActive,typeof(isActive));
 
 let products = ["Popcorn", "Chocolate", "Movie Tickets"];
 const productDetails = {
-    name: products; 
-    price: 29.99
-    InStock = "yes"
+    name: products, 
+    price: 29.99,
+    InStock: "yes"
 
-} console.log(products, productDetails);
+}; 
+ console.log(products, productDetails);
 
 
 // Task 3: Assignment Operators
@@ -43,10 +44,37 @@ let employeeScore1 = 5;
 let employeeScore2 = 8;
 console.log(employeeScore1, employeeScore2);
 
-employeeScore1 < employeeScore2
 console.log(employeeScore1 < employeeScore2); // true
 console.log(employeeScore2 > employeeScore1); //true
 console.log(employeeScore1 >= employeeScore2); // false
 console.log(employeeScore1 <= employeeScore2); // true
 console.log(employeeScore1 === employeeScore2); //false
 console.log(employeeScore1 !== employeeScore2); // true
+
+// Task 5: Logical Operators
+let AccessLoc1 = "granted";
+const AccessLoc1details = {
+    hasKeyCard : true,
+    hasPermission : true
+};
+console.log(AccessLoc1, AccessLoc1details);
+
+let AccessLoc2 = "granted";
+const AccessLoc2details = {
+hasKeyCard : true,
+hasPermission : false };
+console.log(AccessLoc2, AccessLoc2details);
+
+let AccessLoc3 = "denied";
+const AccessLoc3details = {
+hasKeyCard : false,
+hasPermission : false }
+console.log(AccessLoc3, AccessLoc3details);
+
+console.log(AccessLoc1details.hasKeyCard && AccessLoc1details.hasPermission); // true; access granted
+
+console.log(AccessLoc2details.hasKeyCard || AccessLoc2details.hasPermission); // true; access granted
+
+console.log(!AccessLoc3details.hasKeyCard && !AccessLoc3details.hasPermission); // true, access denied
+
+
